@@ -40,7 +40,7 @@ int main(int argc, char *argv[]) {
     }
 
     // Change protocol and pulse length accroding to parameters
-    int code = atoi(argv[1]);
+    unsigned long long int code = atoll(argv[1]);
     if (argc >= 3) protocol = atoi(argv[2]);
     if (argc >= 4) pulseLength = atoi(argv[3]);
     
